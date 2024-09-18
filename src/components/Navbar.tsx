@@ -11,13 +11,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 import SearchForm from './SearchForm'
+import { usePathname } from '@/i18n/routing'
 
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState("konaklama")
-  const [isOpen, setIsOpen] = useState(false)
-
+  const pathname = usePathname();
   return (
     <nav className="bg-white border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,34 +76,46 @@ export default function Navbar() {
             <Button variant="ghost" size="sm" className="text-gray-900 hidden sm:block">
               Evinizi Airbnb'ye taşıyın
             </Button>
-            <Button variant="ghost" size="icon" className="ml-3 text-gray-900">
-              <Globe className="h-6 w-6" />
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="ml-3 text-gray-900">
+                  <Globe className="h-6 w-6" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className='bg-white flex flex-col gap-4 p-4'>
+                <DropdownMenuItem>
+                  <Link href={pathname} locale="en" className="w-full">English</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href={pathname} locale="az" className="w-full">Azərbaycan</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="ml-3 text-gray-900">
                   <User className="h-6 w-6" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuContent align="end" className="w-56 bg-white">
+                <DropdownMenuLabel>Hesabım</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
                   <User className="mr-2 h-4 w-4" />
-                  <span>Profile</span>
+                  <span>Profil</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Settings className="mr-2 h-4 w-4" />
-                  <span>Settings</span>
+                  <span>Ayarlar</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <HelpCircle className="mr-2 h-4 w-4" />
-                  <span>Help</span>
+                  <span>Yardım</span>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
                   <LogOut className="mr-2 h-4 w-4" />
-                  <span>Log out</span>
+                  <span>Çıxış</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
