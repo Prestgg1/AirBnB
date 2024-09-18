@@ -1,0 +1,166 @@
+{
+    "homes": [
+        {
+          "id": 1,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Modern Villa",
+          "description": "Havuzlu ve geniş bahçeli modern villa.",
+          "categoryId": 1
+        },
+        {
+          "id": 2,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Şehir Dairesi",
+          "description": "Şehrin merkezinde lüks bir daire.",
+          "categoryId": 1
+        },
+        {
+          "id": 3,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Müstakil Bahçeli Ev",
+          "description": "Bahçesi olan müstakil ev.",
+          "categoryId": 3
+        },
+        {
+          "id": 4,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Deniz Kenarı Yazlık",
+          "description": "Deniz manzaralı yazlık ev.",
+          "categoryId": 4
+        },
+        {
+          "id": 5,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Dublex Daire",
+          "description": "İki katlı geniş dublex daire.",
+          "categoryId": 5
+        },
+        {
+          "id": 6,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Büyük Çiftlik Evi",
+          "description": "Geniş bir arazide çiftlik evi.",
+          "categoryId": 6
+        },
+        {
+          "id": 7,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Köyde Sakin Ev",
+          "description": "Doğanın içinde köy evi.",
+          "categoryId": 7
+        },
+        {
+          "id": 8,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Tiny House",
+          "description": "Minimalist yaşam için küçük ve kompakt ev.",
+          "categoryId": 8
+        },
+        {
+          "id": 9,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Residans Dairesi",
+          "description": "Rezidans içinde lüks daire.",
+          "categoryId": 9
+        },
+        {
+          "id": 10,
+          "images": [
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          ],
+          "title": "Şehir Loft Dairesi",
+          "description": "Açık plan loft daire.",
+          "categoryId": 10
+        }
+      ],
+    "categories": [
+        {
+          "id": 1,
+          "name": "Villa",
+          "slug": "villa"
+        },
+        {
+          "id": 2,
+          "name": "Daire",
+          "slug": "daire"
+        },
+        {
+          "id": 3,
+          "name": "Müstakil Ev",
+          "slug": "mustakil-ev"
+        },
+        {
+          "id": 4,
+          "name": "Yazlık",
+          "slug": "yazlik"
+        },
+        {
+          "id": 5,
+          "name": "Dublex",
+          "slug": "dublex"
+        },
+        {
+          "id": 6,
+          "name": "Çiftlik Evi",
+          "slug": "ciftlik-evi"
+        },
+        {
+          "id": 7,
+          "name": "Köy Evi",
+          "slug": "koy-evi"
+        },
+        {
+          "id": 8,
+          "name": "Tiny House",
+          "slug": "tiny-house"
+        },
+        {
+          "id": 9,
+          "name": "Residans",
+          "slug": "residans"
+        },
+        {
+          "id": 10,
+          "name": "Loft",
+          "slug": "loft"
+        }
+      ]
+}
