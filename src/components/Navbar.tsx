@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import { Menu, Search, Globe, User, LogOut, Settings, HelpCircle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import {SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -76,49 +78,17 @@ export default function Navbar() {
             <Button variant="ghost" size="sm" className="text-gray-900 hidden sm:block">
               Evinizi Airbnb'ye taşıyın
             </Button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="ml-3 text-gray-900">
-                  <Globe className="h-6 w-6" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className='bg-white flex flex-col gap-4 p-4'>
-                <DropdownMenuItem>
-                  <Link href={pathname} locale="en" className="w-full">English</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href={pathname} locale="az" className="w-full">Azərbaycan</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="ml-3 text-gray-900">
-                  <User className="h-6 w-6" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56 bg-white">
-                <DropdownMenuLabel>Hesabım</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <User className="mr-2 h-4 w-4" />
-                  <span>Profil</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Settings className="mr-2 h-4 w-4" />
-                  <span>Ayarlar</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <HelpCircle className="mr-2 h-4 w-4" />
-                  <span>Yardım</span>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <LogOut className="mr-2 h-4 w-4" />
-                  <span>Çıxış</span>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Button variant="ghost" size="icon" className="ml-3 text-gray-900">
+              <Globe className="h-6 w-6" />
+            </Button>
+            <div className='text-black'>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            </div>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </div>
         </div>
       </div>
